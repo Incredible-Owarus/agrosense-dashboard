@@ -4,13 +4,16 @@ import { GiWateringCan } from "react-icons/gi";
 export default function SoilMoistureComponent() {
   return (
     <div className="card">
-        <div className="soil-banner">
-            <h2>Soil Moisture</h2>
-        </div>
-        <div className="info2">
-            <GiWateringCan size={35} color='#7ec87e' className='icon'/>
-            <h3>65%</h3>
-        </div>
+      <div className="card-header">
+        <div className="card-circle soil-circle"></div>
+        <h2 className="card-title soil-title">Soil Moisture</h2>
+      </div>
+      <div className="card-reading">
+        <h1 className="reading-value soil-value">65%</h1>
+      </div>
+      <div className="card-footer">
+        <GiWateringCan size={28} color='#7ec87e' />
+      </div>
     </div>
   )
 }
